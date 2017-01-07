@@ -1,3 +1,9 @@
+control-centre-antix (0.4.22) unstable; urgency=medium
+
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Sat, 07 Jan 2017 14:37:06 +0200
+
 control-centre-antix (0.4.21) unstable; urgency=medium
 
   * Added missing & to lines 65 and 503 
