@@ -1,0 +1,14 @@
+Source: control-centre-antix
+Section: system
+Priority: optional
+Maintainer: anticapitalista <antix@operamail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: https://github.com/antiX-Linux/control-centre-antix
+
+Package: control-centre-antix
+Architecture: all
+Depends: gtkdialog, yad, geany, leafpad, lxappearance, sysv-rc-conf, rxvt-unicode, wallpaper-antix, user-management-antix, keyboard-cc-antix, arandr, gparted, partimage, grsync, mountbox-antix, live-usb-gui-antix, inxi-gui-antix, ds-mouse-antix, alsa-utils, set-screen-blank-antix   
+Conflicts: mouse-cc-antix, antix-cc-full-antix, antix-cc-base-antix 
+Replaces: mouse-cc-antix, antix-cc-full-antix, antix-cc-base-antix  
+Description: Control centre for antiX full and base versions.

@@ -1,0 +1,4 @@
+antiXCC.desktop     usr/share/applications/antix
+locale/*	    usr/share/locale
+icons/*             usr/share/icons
+antixcc.sh          usr/local/bin

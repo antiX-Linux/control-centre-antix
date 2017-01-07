@@ -1,0 +1,395 @@
+control-centre-antix (0.4.21) unstable; urgency=medium
+
+  * Added missing & to lines 65 and 503 
+
+ -- anticapitalista <antix@operamail.com>  Thu, 30 Jun 2016 19:06:13 +0300
+
+control-centre-antix (0.4.20) unstable; urgency=medium
+
+  * alsamixer-equalizer appears only if present
+
+ -- anticapitalista <antix@operamail.com>  Wed, 22 Jun 2016 00:04:33 +0300
+
+control-centre-antix (0.4.19) unreleased; urgency=medium
+
+  * Added Catalan 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 06 Jun 2016 11:46:06 +0300
+
+control-centre-antix (0.4.18) unstable; urgency=medium
+
+  * Added automount option 
+  * Added set-dpi
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Thu, 02 Jun 2016 09:57:15 +0300
+
+control-centre-antix (0.4.17) unstable; urgency=medium
+
+  * updated translations 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 30 May 2016 16:05:12 +0300
+
+control-centre-antix (0.4.16) unstable; urgency=medium
+
+  * fixed Data and Time bug 
+
+ -- anticapitalista <antix@operamail.com>  Sun, 29 May 2016 20:04:42 +0300
+
+control-centre-antix (0.4.15) unstable; urgency=medium
+
+  * added back the names of antiX2usb and UNetbootin
+  * Changed width from 28 to 32 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 16 May 2016 12:06:00 +0300
+
+control-centre-antix (0.4.14) unstable; urgency=medium
+
+  * Relabelled antix2usb and UNetbootin 
+  * Renamed to control-centre-antix
+
+ -- anticapitalista <antix@operamail.com>  Thu, 12 May 2016 12:02:57 +0300
+
+antix-cc-antix (0.4.13) unstable; urgency=medium
+
+  * Use hide so we use one script for both antiX-full and base
+  * Change control to suit antiX-base
+
+ -- anticapitalista <antix@operamail.com>  Sun, 01 May 2016 15:40:45 +0300
+
+antix-cc-full-antix (0.4.12) unstable; urgency=medium
+
+  * Removed Global Desktop-Session 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 29 Apr 2016 20:15:41 +0300
+
+antix-cc-full-antix (0.4.11) unstable; urgency=medium
+
+  * Fix link to show Remaster when running live - use /etc/ 
+
+ -- anticapitalista <antix@operamail.com>  Sun, 03 Apr 2016 23:26:43 +0300
+
+antix-cc-full-antix (0.4.10+nmu1) unstable; urgency=medium
+
+  * Live tab grep for overlayfs not aufs 
+
+ -- anticapitalista <antix@operamail.com>  Thu, 24 Mar 2016 14:22:15 +0200
+
+antix-cc-full-antix (0.4.10) unstable; urgency=low
+ 
+  * Fixed broken Time and Date
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 03 Feb 2016 16:30:00 +0200
+
+
+antix-cc-full-antix (0.4.9) unstable; urgency=low
+ 
+  * Replaced mouse-cc-antix with ds-mouse-antix
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 27 Jan 2016 15:42:00 +0200
+
+
+antix-cc-full-antix (0.4.8) unstable; urgency=low
+ 
+  * Fixed Edit Bootloader menu bug (needs "")
+  * Changed su -c (root) to sudo
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 15 Jan 2016 17:38:00 +0200
+
+
+antix-cc-full-antix (0.4.7) unstable; urgency=low
+ 
+  * Updated Catalan, German, Greek, Spanish, Italian and Swedish
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 29 Jun 2015 14:06:00 +0200
+
+
+antix-cc-full-antix (0.4.6) unstable; urgency=low
+ 
+  * Updated Italian translation
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 26 Jun 2015 15:20:00 +0200
+
+
+antix-cc-full-antix (0.4.5) unstable; urgency=low
+ 
+  * Corrected icon for connectshares and renamed to Configure Connectshares
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 24 Jun 2015 18:28:00 +0200
+
+
+antix-cc-full-antix (0.4.4) unstable; urgency=low
+ 
+  * Removed CLI and Tools entries
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 12 Jun 2015 19:45:00 +0200
+
+
+antix-cc-full-antix (0.4.3) unstable; urgency=low
+ 
+  * Fixed connectshares path
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 04 Jun 2015 00:20:00 +0200
+
+
+antix-cc-full-antix (0.4.2) unstable; urgency=low
+ 
+  * Updated translations
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 30 May 2015 16:49:00 +0200
+
+
+antix-cc-full-antix (0.4.1) unstable; urgency=low
+ 
+  * CLI Apps tab added.
+  * More icons
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 21 Apr 2015 15:02:00 +0200
+
+
+antix-cc-full-antix (0.4.0) unstable; urgency=low
+ 
+  * Code clean up
+  * gksu preset to use sudo in properties.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 03 Apr 2015 16:13:00 +0200
+
+
+antix-cc-full-antix (0.3.12) unstable; urgency=low
+ 
+  * Changes to live tag and back to using gksu
+  * Cleaned up code formatting.
+  * Replaced Edit Login Options.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 13 Mar 2015 21:47:00 +0200
+
+
+antix-cc-full-antix (0.3.11) unstable; urgency=low
+ 
+  * Replace hard-coded editor/terminal.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 17 Feb 2015 13:08:00 +0200
+
+
+antix-cc-full-antix (0.3.10) unstable; urgency=low
+ 
+  * Corrected .desktop icon path
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 02 Jan 2015 18:27:00 +0200
+
+
+antix-cc-full-antix (0.3.9) unstable; urgency=low
+ 
+  * New icon theme.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 27 Dec 2014 14:22:00 +0200
+
+
+antix-cc-full-antix (0.3.8) unstable; urgency=low
+ 
+  * Added desktop-configuration session buttons.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 15 Nov 2014 21:20:00 +0200
+
+
+antix-cc-full-antix (0.3.7.1) unstable; urgency=low
+ 
+  * Preparation for release.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 26 Oct 2013 18:15:00 +0200
+
+
+antix-cc-full-antix (0.3.7) unstable; urgency=low
+ 
+  * Using dpkg-buildpackage.
+  * .desktop file a no show.
+  * Added set-screen-blanking.
+  * Added Test Sound button.
+  * xz compressed deb.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 17 October 2013 19:55:00 +0200
+
+antix-cc-full-antix (0.3.6) unstable; urgency=low
+ 
+  * Added some extra icons.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 16 june 2013 14:15:00 +0200
+
+
+antix-cc-full-antix (0.3.5) unstable; urgency=low
+ 
+  * Added Arabic and Swedish to locales.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 May 2013 14:20:00 +0200
+
+
+antix-cc-full-antix (0.3.4) unstable; urgency=low
+ 
+  * Using x-terminal-emulator.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 12 May 2013 12:40:00 +0200
+
+
+antix-cc-full-antix (0.3.3) unstable; urgency=low
+ 
+  * Changes to cater for live-usb-gui-antix.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 06 March 2013 23:40:00 +0200
+
+
+antix-cc-full-antix (0.3.2) unstable; urgency=low
+ 
+  * arandr replaces grandr.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 15 February 2013 00:10:00 +0200
+
+
+antix-cc-full-antix (0.3.1.2) unstable; urgency=low
+ 
+  * Removed set cursors as it is in lxappearance.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 02 December 2012 22:10:00 +0200
+
+
+antix-cc-full-antix (0.3.1.1) unstable; urgency=low
+
+  * Fixed bug in antiXcc.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 30 October 2012 18:40:00 +0200
+
+
+antix-cc-full-antix (0.3.1) unstable; urgency=low
+
+  * New release.
+  * jwm menu link fixed.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 27 October 2012 22:50:00 +0200
+
+
+antix-cc-full-antix (0.3.0) unstable; urgency=low
+ 
+  * Using gksu and ktsuss.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 26 October 2012 14:35:00 +0200
+
+
+antix-cc-full-antix (0.2.1) unstable; urgency=low
+ 
+  * Bug fixes.
+  * Removed close button.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 13 October 2012 15:05:00 +0200
+
+
+antix-cc-full-antix (0.2.0) unstable; urgency=low
+ 
+  * Replaced gksu with ktsuss.
+  * Function for icons.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 23 September 2012 13:55:00 +0200
+
+
+antix-cc-full-antix (0.1.5.1) unstable; urgency=low
+ 
+  * Fixed ownership bug.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 26 August 2012 15:40:00 +0200
+
+
+antix-cc-full-antix (0.1.5.0) unstable; urgency=low 
+ 
+  * Removed defunct alsaconf.
+
+ -- anticapitalista <antiX@operamail.com> Fri, 03 August J2012 17:40:00 +0200
+
+
+antix-cc-full-antix (0.1.4.9) unstable; urgency=low 
+ 
+  * Added copyright notice.
+
+ -- anticapitalista <antiX@operamail.com> Mon, 16 July 2012 15:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.8) unstable; urgency=low 
+ 
+  * Altered for /bin/bash..
+
+ -- anticapitalista <antiX@operamail.com>  Tues, 10 July 2012 18:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.7) unstable; urgency=low 
+ 
+  * Improved Dutch localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 21 May 2012 18:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.6) unstable; urgency=low 
+ 
+  * Improved localisation.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 30 April 2012 18:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.5) unstable; urgency=low 
+ 
+  * Remastercc.sh needs bash.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 25 April 2012 18:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.4) unstable; urgency=low 
+ 
+  * mountbox-antix to open as user not root.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 18 April 2012 18:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.3) unstable; urgency=low 
+ 
+  * Link to /etc/apt/sources.d folder.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 05 April 2012 00:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.2) unstable; urgency=low 
+ 
+  * Removed various dependencies.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 02 April 2012 22:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4.1) unstable; urgency=low 
+ 
+  * Removed manage-slim-antix dependency.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 02 April 2012 17:30:00 +0200
+
+
+antix-cc-full-antix (0.1.4) unstable; urgency=low 
+ 
+  * Link to persist-makefs not fs-make.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 02 April 2012 12:30:00 +0200
+
+
+antix-cc-full-antix (0.1.3) unstable; urgency=low 
+ 
+  * Added Live tab for remastering and persistence.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 09 March 2012 12:30:00 +0200
+
+
+antix-cc-full-antix (0.1.2) unstable; urgency=low 
+ 
+  * Fixed icon for wicd.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 20 February 2012 18:10:00 +0200
+
+
+antix-cc-full-antix (0.1.1) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 29 January 2012 15:30:00 +0200
+
