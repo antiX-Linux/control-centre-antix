@@ -1,3 +1,59 @@
+control-centre-antix (0.5.7) unstable; urgency=medium
+
+  * Mountbox icon changed
+
+ -- anticapitalista <antix@operamail.com>  Thu, 27 Apr 2017 00:45:43 +0300
+
+control-centre-antix (0.5.6) unstable; urgency=medium
+
+  * Added User Manager
+
+ -- anticapitalista <antix@operamail.com>  Sat, 22 Apr 2017 18:31:34 +0300
+
+control-centre-antix (0.5.5) unstable; urgency=medium
+
+  * Added antixccgrub.sh to control centre
+
+ -- anticapitalista <antix@operamail.com>  Mon, 10 Apr 2017 17:12:33 +0300
+
+control-centre-antix (0.5.4) unstable; urgency=medium
+
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Tue, 04 Apr 2017 22:09:00 +0300
+
+control-centre-antix (0.5.3) unstable; urgency=medium
+
+  * Rearranged tabs to avoid gtkdiaog failures if no apps in a vbox are not installed
+
+ -- anticapitalista <antix@operamail.com>  Sat, 25 Mar 2017 18:39:05 +0200
+
+control-centre-antix (0.5.2) unstable; urgency=medium
+
+  * Fix typo error for installation of ati/nvidia drivers
+
+ -- anticapitalista <antix@operamail.com>  Tue, 21 Mar 2017 23:33:36 +0200
+
+control-centre-antix (0.5.1) unstable; urgency=medium
+
+  * Reduced icon set
+  * antixcc.sh only show installed apps in control centre
+
+ -- anticapitalista <antix@operamail.com>  Tue, 14 Mar 2017 15:24:02 +0200
+
+control-centre-antix (0.5.0) unstable; urgency=medium
+
+  * live-usb-maker-gui replaces antix2usb
+  * lxkeymap to set session keyboard layout
+
+ -- anticapitalista <antix@operamail.com>  Fri, 10 Mar 2017 19:29:27 +0200
+
+control-centre-antix (0.4.23) unstable; urgency=medium
+
+  * New .desktop names for icewm and jwm in stretch/sid
+
+ -- anticapitalista <antix@operamail.com>  Wed, 08 Mar 2017 18:53:13 +0200
+
 control-centre-antix (0.4.22) unstable; urgency=medium
 
   * Updated translations

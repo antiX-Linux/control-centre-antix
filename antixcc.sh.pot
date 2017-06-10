@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-27 16:30+0300\n"
+"POT-Creation-Date: 2017-03-16 19:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,238 +17,302 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: antixcc.sh:27
+#: antixcc.sh:29
 msgid "Desktop"
 msgstr ""
 
-#: antixcc.sh:27
+#: antixcc.sh:29
 msgid "System"
 msgstr ""
 
-#: antixcc.sh:27
+#: antixcc.sh:29
 msgid "Network"
 msgstr ""
 
-#: antixcc.sh:27
+#: antixcc.sh:29
+msgid "Shares"
+msgstr ""
+
+#: antixcc.sh:29
 msgid "Session"
 msgstr ""
 
-#: antixcc.sh:28
+#: antixcc.sh:30
 msgid "Live"
 msgstr ""
 
-#: antixcc.sh:28
+#: antixcc.sh:30
 msgid "Disks"
 msgstr ""
 
-#: antixcc.sh:28
+#: antixcc.sh:30
 msgid "Hardware"
 msgstr ""
 
-#: antixcc.sh:38
+#: antixcc.sh:30
+msgid "Drivers"
+msgstr ""
+
+#: antixcc.sh:30
+msgid "Maintenance"
+msgstr ""
+
+#: antixcc.sh:31
+msgid "Set Font Size"
+msgstr ""
+
+#: antixcc.sh:41
 msgid "Edit Fluxbox Settings"
 msgstr ""
 
-#: antixcc.sh:52
+#: antixcc.sh:55
 msgid "Edit IceWM Settings"
 msgstr ""
 
-#: antixcc.sh:66
+#: antixcc.sh:69
 msgid "Edit jwm Settings"
 msgstr ""
 
-#: antixcc.sh:82
+#: antixcc.sh:84
 msgid "Edit Bootloader menu"
 msgstr ""
 
-#: antixcc.sh:96
+#: antixcc.sh:98
 msgid "Edit Exclude files"
 msgstr ""
 
-#: antixcc.sh:109
-msgid "Save root persistence"
-msgstr ""
-
-#: antixcc.sh:122
-msgid "Remaster"
-msgstr ""
-
-#: antixcc.sh:137
-msgid "Configure live persistence"
-msgstr ""
-
-#: antixcc.sh:150
-msgid "Set up live persistence"
-msgstr ""
-
-#: antixcc.sh:182
-msgid "Choose Wallpaper"
-msgstr ""
-
-#: antixcc.sh:193
-msgid "Edit System Monitor(conky)"
-msgstr ""
-
-#: antixcc.sh:205
-msgid "Change Gtk2 and Icon Themes"
-msgstr ""
-
-#: antixcc.sh:215
-msgid "Preferred Applications"
-msgstr ""
-
-#: antixcc.sh:224
-msgid "Edit menus"
-msgstr ""
-
-#: antixcc.sh:238
-msgid "Manage Packages"
-msgstr ""
-
-#: antixcc.sh:248
-msgid "Configure System"
-msgstr ""
-
-#: antixcc.sh:257
-msgid "Meta Package Installer"
-msgstr ""
-
-#: antixcc.sh:266
-msgid "Choose Startup Services"
-msgstr ""
-
-#: antixcc.sh:278
-msgid "Manage Users"
-msgstr ""
-
-#: antixcc.sh:288
-msgid "Edit Config Files"
-msgstr ""
-
-#: antixcc.sh:298
-msgid "System Information"
-msgstr ""
-
-#: antixcc.sh:307
-msgid "Set Date and Time"
-msgstr ""
-
-#: antixcc.sh:322
-msgid "Network Interfaces (ceni)"
-msgstr ""
-
-#: antixcc.sh:332
-msgid "Configure GPRS/UMTS"
-msgstr ""
-
-#: antixcc.sh:342
-msgid "Connect Wirelessly (wicd)"
-msgstr ""
-
-#: antixcc.sh:352
-msgid "Configure Connectshares"
-msgstr ""
-
-#: antixcc.sh:363
-msgid "Configure Dial-Up"
-msgstr ""
-
-#: antixcc.sh:372
-msgid "Configure wpa_supplicant"
-msgstr ""
-
-#: antixcc.sh:381
-msgid "Manage Firewall"
-msgstr ""
-
-#: antixcc.sh:390
-msgid "Adblock"
-msgstr ""
-
-#: antixcc.sh:403
-msgid "Change Keyboard Layout"
-msgstr ""
-
-#: antixcc.sh:412
-msgid "Change Slim Background"
-msgstr ""
-
-#: antixcc.sh:421
-msgid "Set Screen Resolution"
-msgstr ""
-
-#: antixcc.sh:430
+#: antixcc.sh:112
 msgid "Global Desktop-Session"
 msgstr ""
 
-#: antixcc.sh:441
-msgid "Password Prompt(su/sudo)"
+#: antixcc.sh:126
+msgid "Manage Packages"
 msgstr ""
 
-#: antixcc.sh:450
-msgid "Set auto-login"
+#: antixcc.sh:140
+msgid "Boot Repair"
 msgstr ""
 
-#: antixcc.sh:459
-msgid "Set Screen Blanking"
+#: antixcc.sh:154
+msgid "Connect Wirelessly (wicd)"
 msgstr ""
 
-#: antixcc.sh:468
-msgid "User Desktop-Session"
+#: antixcc.sh:168
+msgid "Manage Firewall"
 msgstr ""
 
-#: antixcc.sh:482
-msgid "Partition a Drive"
-msgstr ""
-
-#: antixcc.sh:491
-msgid "Mount Connected Devices"
-msgstr ""
-
-#: antixcc.sh:500
+#: antixcc.sh:182
 msgid "Backup Your System"
 msgstr ""
 
-#: antixcc.sh:509
-msgid "UNetbootin"
+#: antixcc.sh:196
+msgid "Alsamixer Equalizer"
 msgstr ""
 
-#: antixcc.sh:520
-msgid "antiX2usb"
+#: antixcc.sh:210
+msgid "Install to USB retain partitions (UNetbootin)"
 msgstr ""
 
-#: antixcc.sh:529
-msgid "Image a Partition"
-msgstr ""
-
-#: antixcc.sh:538
-msgid "Synchronize Directories"
-msgstr ""
-
-#: antixcc.sh:551
+#: antixcc.sh:224
 msgid "Setup a Printer"
 msgstr ""
 
+#: antixcc.sh:238
+msgid "Live-usb kernel updater"
+msgstr ""
+
+#: antixcc.sh:252
+msgid "Change Keyboard Layout for Session"
+msgstr ""
+
+#: antixcc.sh:266
+msgid "Set System Keymap"
+msgstr ""
+
+#: antixcc.sh:280
+msgid "Choose Wallpaper"
+msgstr ""
+
+#: antixcc.sh:294
+msgid "Edit System Monitor(conky)"
+msgstr ""
+
+#: antixcc.sh:308
+msgid "Change Gtk2 and Icon Themes"
+msgstr ""
+
+#: antixcc.sh:322
+msgid "Preferred Applications"
+msgstr ""
+
+#: antixcc.sh:336
+msgid "Meta Package Installer"
+msgstr ""
+
+#: antixcc.sh:350
+msgid "Choose Startup Services"
+msgstr ""
+
+#: antixcc.sh:364
+msgid "Set Date and Time"
+msgstr ""
+
+#: antixcc.sh:378
+msgid "Network Interfaces (ceni)"
+msgstr ""
+
+#: antixcc.sh:392
+msgid "Configure GPRS/UMTS"
+msgstr ""
+
+#: antixcc.sh:406
+msgid "Configure Connectshares"
+msgstr ""
+
+#: antixcc.sh:420
+msgid " Disconnectshares"
+msgstr ""
+
+#: antixcc.sh:434
+msgid "Share Files via Droopy"
+msgstr ""
+
+#: antixcc.sh:448
+msgid "Configure Dial-Up"
+msgstr ""
+
+#: antixcc.sh:462
+msgid "Configure wpa_supplicant"
+msgstr ""
+
+#: antixcc.sh:476
+msgid "ADSL/PPPOE configuration"
+msgstr ""
+
+#: antixcc.sh:490
+msgid "Adblock"
+msgstr ""
+
+#: antixcc.sh:504
+msgid "Change Slim Background"
+msgstr ""
+
+#: antixcc.sh:518
+msgid "Edit Config Files"
+msgstr ""
+
+#: antixcc.sh:532
+msgid "Set Screen Resolution"
+msgstr ""
+
+#: antixcc.sh:546
+msgid "Password Prompt(su/sudo)"
+msgstr ""
+
 #: antixcc.sh:560
+msgid "Set auto-login"
+msgstr ""
+
+#: antixcc.sh:574
+msgid "Set Screen Blanking"
+msgstr ""
+
+#: antixcc.sh:588
+msgid "User Desktop-Session"
+msgstr ""
+
+#: antixcc.sh:602
+msgid "Configure Automounting"
+msgstr ""
+
+#: antixcc.sh:616
+msgid "Mount Connected Devices"
+msgstr ""
+
+#: antixcc.sh:630
+msgid "Install to USB"
+msgstr ""
+
+#: antixcc.sh:644
+msgid "Image a Partition"
+msgstr ""
+
+#: antixcc.sh:658
+msgid "Synchronize Directories"
+msgstr ""
+
+#: antixcc.sh:672
+msgid "Partition a Drive"
+msgstr ""
+
+#: antixcc.sh:700
 msgid "PC Information"
 msgstr ""
 
-#: antixcc.sh:569
+#: antixcc.sh:714
 msgid "Configure Mouse"
 msgstr ""
 
-#: antixcc.sh:581
+#: antixcc.sh:728
 msgid "Set Default Sound Card"
 msgstr ""
 
-#: antixcc.sh:590
-msgid "Test Sound"
-msgstr ""
-
-#: antixcc.sh:599
+#: antixcc.sh:742
 msgid "Adjust Mixer"
 msgstr ""
 
-#: antixcc.sh:608
-msgid "Alsamixer Equalizer"
+#: antixcc.sh:756
+msgid "AMD/ATI fglrx Driver Installer"
+msgstr ""
+
+#: antixcc.sh:770
+msgid "Nvidia Driver Installer"
+msgstr ""
+
+#: antixcc.sh:784
+msgid "MS Windows Wireless Drivers"
+msgstr ""
+
+#: antixcc.sh:798
+msgid "Snapshot"
+msgstr ""
+
+#: antixcc.sh:812
+msgid "Test Sound"
+msgstr ""
+
+#: antixcc.sh:826
+msgid "Edit menus"
+msgstr ""
+
+#: antixcc.sh:840
+msgid "Alternatives Configurator"
+msgstr ""
+
+#: antixcc.sh:854
+msgid "Install Restricted Codecs"
+msgstr ""
+
+#: antixcc.sh:868
+msgid "Install Flash/PepperFlash"
+msgstr ""
+
+#: antixcc.sh:882
+msgid "Network Troubleshooting"
+msgstr ""
+
+#: antixcc.sh:895
+msgid "Save root persistence"
+msgstr ""
+
+#: antixcc.sh:908
+msgid "Remaster"
+msgstr ""
+
+#: antixcc.sh:923
+msgid "Configure live persistence"
+msgstr ""
+
+#: antixcc.sh:937
+msgid "Set up live persistence"
 msgstr ""
