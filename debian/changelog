@@ -1,3 +1,46 @@
+control-centre-antix (0.6.1) unstable; urgency=medium
+
+  * Added 1to1 apps and ssh-conduit to show in control centre if installed
+
+ -- anticapitalista <antix@operamail.com>  Sat, 16 Sep 2017 12:39:08 +0100
+
+control-centre-antix (0.6.0) unstable; urgency=medium
+
+  * Restructured control centre
+
+ -- anticapitalista <antix@operamail.com>  Sat, 15 Jul 2017 12:16:59 +0100
+
+control-centre-antix (0.5.12) unstable; urgency=medium
+
+  * Fixed typo that disabled sound card
+  * Added antiX-cli-cc
+
+ -- anticapitalista <antix@operamail.com>  Mon, 03 Jul 2017 01:26:09 +0300
+
+control-centre-antix (0.5.11) unstable; urgency=medium
+
+  * Added packageinstaller and packageinstaller-pkglist to control depends
+
+ -- anticapitalista <antix@operamail.com>  Sun, 02 Jul 2017 13:26:08 +0300
+
+control-centre-antix (0.5.10) unstable; urgency=medium
+
+  * Replaced install-meta package with packageinstaller
+
+ -- anticapitalista <antix@operamail.com>  Thu, 29 Jun 2017 14:38:53 +0300
+
+control-centre-antix (0.5.9) unstable; urgency=medium
+
+  * removed flash-antix dependency and code
+
+ -- anticapitalista <antix@operamail.com>  Sun, 25 Jun 2017 14:47:48 +0300
+
+control-centre-antix (0.5.8) unstable; urgency=medium
+
+  * Added lxterminal, artwork17-antix, arc-theme, grubcc-antix to depends for jessie-stretch upgrade 
+
+ -- anticapitalista <antix@operamail.com>  Wed, 21 Jun 2017 18:25:05 +0300
+
 control-centre-antix (0.5.7) unstable; urgency=medium
 
   * Mountbox icon changed
