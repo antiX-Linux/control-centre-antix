@@ -1,10 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=antiXCC
+Name=Control Centre
 Comment=All-in-one control centre for antiX
 Exec=antixcc.sh
 Icon=preferences-desktop
 Terminal=false
 Type=Application
-Categories=Other;
-NoDisplay=True
+Categories=System;
+NoDisplay=False

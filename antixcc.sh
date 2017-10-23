@@ -32,11 +32,52 @@ TEXTDOMAIN=antixcc.sh
 ICONS=/usr/share/icons/antiX
 ICONS2=/usr/share/pixmaps
 
+EXCLUDES_DIR=/usr/local/share/excludes 
+
 EDITOR="geany -i"
 
 Desktop=$"Desktop" System=$"System" Network=$"Network" Shares=$"Shares" Session=$"Session"
 Live=$"Live" Disks=$"Disks" Hardware=$"Hardware" Drivers=$"Drivers" Maintenance=$"Maintenance"
 dpi_label=$(printf "%s (DPI)" $"Set Font Size")
+
+vbox() {
+    local text="$*"
+    local len=${#text}
+    #printf "vlen: %6s\n" "$len" >&2
+    [ $len -lt 20 ] && return
+    echo "  <vbox>"
+    local item
+    for item; do
+        echo "$item"
+    done
+    echo "  </vbox>"
+}
+
+hbox() {
+    local text="$*"
+    local len=${#text}
+    #printf "hlen: %6s\n" "$len" >&2
+    [ $len -lt 20 ] && return
+    echo "<hbox>"
+    local item
+    for item; do
+        echo "$item"
+    done
+    echo "</hbox>"
+}
+
+vbox_frame_hbox() {
+    local text="$*"
+    local len=${#text}
+    #printf "flen: %6s\n" "$len" >&2
+    [ $len -lt 20 ] && return
+    echo "<vbox><frame><hbox>"
+    local item
+    for item; do
+        echo "$item"
+    done
+    echo "</hbox></frame></vbox>"
+}
 
 entry() {
     local image=$1  action=$2  text=$3
@@ -71,18 +112,13 @@ Entry
 # Edit syslinux.cfg if the device it is own is mounted read-write
 grep -q " /live/boot-dev .*\<rw\>" /proc/mounts && bootloader_entry=$(entry \
     $ICONS/preferences-desktop.png \
-    "gksu $EDITOR /live/boot-dev/boot/syslinux/syslinux.cfg &" \
+    "gksu '$EDITOR /live/boot-dev/boot/syslinux/syslinux.cfg /live/boot-dev/boot/grub/grub.cfg' &" \
     $"Edit Bootloader menu")
 
 test -d /usr/local/share/excludes && excludes_entry=$(entry \
     $ICONS/remastersys.png \
-    "gksu $EDITOR $excludes_dir/*.list &" \
+    "gksu $EDITOR $EXCLUDES_DIR/*.list &" \
     $"Edit Exclude files")
-
-test -d /etc/desktop-session && global_entry=$(entry \
-    $ICONS/gnome-session.png \
-    "gksu $EDITOR $global_dir/*.conf $global_dir/startup &" \
-    $"Global Desktop-Session")
 
 if test -x /usr/sbin/synaptic; then synaptic_entry=$(entry \
     $ICONS2/synaptic.png \
@@ -186,7 +222,7 @@ test -x $packageinstaller_prog && packageinstaller_entry=$(entry \
 svconf_prog=/usr/sbin/sysv-rc-conf
 test -x $sysvconf_prog && sysvconf_entry=$(entry \
     $ICONS/gnome-settings-default-applications.png \
-    "desktop-defaults-run -t sudo sysv-rc-conf &" \
+    "rc-conf-wrapper.sh &" \
     $"Choose Startup Services")
 
 tzdata_dir=/usr/share/zoneinfo
@@ -467,19 +503,13 @@ which backlight-brightness &>/dev/null && [ -n "$(ls /sys/class/backlight 2>/dev
     $"Remaster-Customize Live")
 
 live_tab=$(cat<<Live_Tab
-<vbox> <frame> <hbox>
-  <vbox>
-$(entry "$ICONS/remastersys.png" "gksu persist-config &" $"Configure live persistence")
-$livekernel_entry
-$bootloader_entry
-$persist_save
-  </vbox>
-  <vbox>
-$(entry $ICONS/palimpsest.png "gksu persist-makefs &" $"Set up live persistence")
-$excludes_entry
-$live_remaster
-  </vbox>
-</hbox> </frame> </vbox>
+$(vbox_frame_hbox \
+"$(vbox \
+"$(entry "$ICONS/remastersys.png" "gksu persist-config &" $"Configure live persistence")" \
+"$livekernel_entry" "$bootloader_entry" "$persist_save")" \
+"$(vbox \
+"$(entry $ICONS/palimpsest.png "gksu persist-makefs &" $"Set up live persistence")" \
+"$excludes_entry" "$live_remaster")")
 Live_Tab
 )
 
@@ -496,132 +526,53 @@ export ControlCenter=$(cat<<Control_Center
 <window title="antiX Control Center" icon="gnome-control-center" window-position="1">
   <vbox>
 <notebook tab-pos="0" labels="$tab_labels">
-<vbox> <frame> <hbox>
-  <vbox>
-$wallpaper_entry
-$icewm_entry
-$jwm_entry
-$conky_entry
-  </vbox>
-  <vbox>
-$setdpi_entry
-$lxappearance_entry
-$fluxbox_entry
-$prefapps_entry
-  </vbox>
-</hbox> </frame> </vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$synaptic_entry
-$packageinstaller_entry
-$sysvconf_entry
-$galternatives_entry
-  </vbox>
-  <vbox>
-$confroot_entry
-$fskbsetting_entry
-$tzdata_entry
-  </vbox>
-</hbox> </frame> </vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$ceni_entry
-$umts_entry
-$wicd_entry
-$pppoeconf_entry
-  </vbox>
-  <vbox>
-$gnomeppp_entry
-$wpasupplicant_entry
-$firewall_entry
-$adblock_entry
-  </vbox>
-</hbox> </frame></vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$connectshares_entry
-$droopy_entry
-$assistant_entry
-$voice_entry
-  </vbox>
-  <vbox>
-$disconnectshares_entry
-$sshconduit_entry
-$samba_entry
-  </vbox>
-</hbox> </frame></vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$lxkeymap_entry
-$slim_entry
-$arandr_entry
-$grub_entry
-  </vbox>
-  <vbox>
-$gksu_entry
-$slimlogin_entry
-$screenblank_entry
-$desktopsession_entry
-  </vbox>
-</hbox> </frame> </vbox>
+$(vbox_frame_hbox \
+"$(vbox "$wallpaper_entry" "$icewm_entry" "$jwm_entry" "$conky_entry")" \
+"$(vbox "$setdpi_entry" "$lxappearance_entry" "$fluxbox_entry" "$prefapps_entry")" )
+
+$(vbox_frame_hbox \
+"$(vbox "$synaptic_entry" "$packageinstaller_entry" "$sysvconf_entry" "$galternatives_entry")" \
+"$(vbox "$confroot_entry" "$fskbsetting_entry" "$tzdata_entry")" )
+
+$(vbox_frame_hbox \
+"$(vbox "$ceni_entry" "$umts_entry" "$wicd_entry" "$pppoeconf_entry")" \
+"$(vbox "$gnomeppp_entry" "$wpasupplicant_entry" "$firewall_entry" "$adblock_entry")" )
+
+$(vbox_frame_hbox \
+"$(vbox "$connectshares_entry" "$droopy_entry" "$assistant_entry" "$voice_entry")" \
+"$(vbox "$disconnectshares_entry" "$sshconduit_entry" "$samba_entry")" )
+
+$(vbox_frame_hbox \
+"$(vbox "$lxkeymap_entry" "$slim_entry" "$arandr_entry" "$grub_entry")" \
+"$(vbox "$gksu_entry" "$slimlogin_entry" "$screenblank_entry" "$desktopsession_entry")")
+
 $live_tab
-<vbox> <frame> <hbox>
-  <vbox>
-$automount_entry
-$installer_entry
-$mountbox_entry
-$unetbootin_entry
-  </vbox>
-  <vbox>
-$liveusb_entry
-$partimage_entry
-$grsync_entry
-$gparted_entry
-  </vbox>
-</hbox> </frame> </vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$printer_entry
-$inxi_entry
-$mouse_entry
-$backlight_entry
-  </vbox>
-  <vbox>
-$soundcard_entry
-$soundtest_entry
-$mixer_entry
-$equalizer_entry
-  </vbox>
-</hbox> </frame> </vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$nvdriver_entry
-$atidriver_entry
-$codecs_entry
-  </vbox>
-  <vbox>
-$ndiswrapper_entry
-  </vbox>
-</hbox> </frame> </vbox>
-<vbox> <frame> <hbox>
-  <vbox>
-$snapshot_entry
-$backup_entry
-$broadcom_entry
-  </vbox>
-  <vbox>
-$bootrepair_entry
-$menumanager_entry
-$usermanager_entry
-  </vbox>
-</hbox> </frame> </vbox>
+
+$(vbox_frame_hbox \
+"$(vbox "$automount_entry" "$installer_entry" "$mountbox_entry" "$unetbootin_entry")" \
+"$(vbox "$liveusb_entry" "$partimage_entry" "$grsync_entry" "$gparted_entry")")
+
+$(vbox_frame_hbox \
+"$(vbox "$printer_entry" "$inxi_entry" "$mouse_entry" "$backlight_entry")" \
+"$(vbox "$soundcard_entry" "$soundtest_entry" "$mixer_entry" "$equalizer_entry")")
+
+$(vbox_frame_hbox \
+"$(vbox "$nvdriver_entry" "$atidriver_entry" "$codecs_entry")" \
+"$(vbox "$ndiswrapper_entry")" )
+
+$(vbox_frame_hbox \
+"$(vbox "$snapshot_entry" "$backup_entry" "$broadcom_entry")" \
+"$(vbox "$bootrepair_entry" "$menumanager_entry" "$usermanager_entry")" )
+
 </notebook>
 </vbox>
 </window>
 Control_Center
 )
 
-#echo "$ControlCenter"
+case $1 in
+    -d|--debug) echo "$ControlCenter" ; exit ;;
+esac
 
 gtkdialog --program=ControlCenter
 #unset ControlCenter
