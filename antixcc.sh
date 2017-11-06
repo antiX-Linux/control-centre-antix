@@ -36,6 +36,18 @@ EXCLUDES_DIR=/usr/local/share/excludes
 
 EDITOR="geany -i"
 
+
+its_alive() {
+    # return 0
+    local root_fstype=$(df -PT / | tail -n1 | awk '{print $2}')
+    case $root_fstype in
+        aufs|overlay) return 0 ;;
+                   *) return 1 ;;
+    esac
+}
+
+its_alive && ITS_ALIVE=true
+
 Desktop=$"Desktop" System=$"System" Network=$"Network" Shares=$"Shares" Session=$"Session"
 Live=$"Live" Disks=$"Disks" Hardware=$"Hardware" Drivers=$"Drivers" Maintenance=$"Maintenance"
 dpi_label=$(printf "%s (DPI)" $"Set Font Size")
@@ -109,7 +121,7 @@ Entry
     "$EDITOR $HOME/.jwm/preferences $HOME/.jwm/keys $HOME/.jwm/tray $HOME/.jwm/startup $HOME/.jwmrc $HOME/.jwm/menu &" \
     $"Edit jwm Settings")
 
-# Edit syslinux.cfg if the device it is own is mounted read-write
+# Edit syslinux.cfg if the device it is on is mounted read-write
 grep -q " /live/boot-dev .*\<rw\>" /proc/mounts && bootloader_entry=$(entry \
     $ICONS/preferences-desktop.png \
     "gksu '$EDITOR /live/boot-dev/boot/syslinux/syslinux.cfg /live/boot-dev/boot/grub/grub.cfg' &" \
@@ -380,7 +392,7 @@ liveusb_entry=$(entry \
 fi
 
 installer_prog=/usr/sbin/minstall
-test -x $installer_prog && installer_entry=$(entry \
+[ -x $installer_prog -a -n "$ITS_ALIVE" ] && installer_entry=$(entry \
     $ICONS2/msystem.png \
     "gksudo $installer_prog &" \
     $"Install antiX Linux")

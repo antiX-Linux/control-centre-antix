@@ -1,3 +1,9 @@
+control-centre-antix (0.6.4) unstable; urgency=medium
+
+  *  installer button should not appear on installed systems
+
+ -- anticapitalista <antix@operamail.com>  Thu, 02 Nov 2017 19:37:01 +0200
+
 control-centre-antix (0.6.3) unstable; urgency=medium
 
   * Use rc-conf-wrapper.sh script - thanks skidoo
