@@ -22,6 +22,7 @@
 #     perhaps I should switch to "which" or "type"
 #   * move set-dpi to desktop tab
 #   * enable ati driver button in hardware tab
+# 18 Nov by antiX-Dave: fix edit jwm settings button to match icons with icewm and fluxbox
 #
 # Acknowledgements: Original script by KDulcimer of TinyMe. http://tinyme.mypclinuxos.com
 #################################################################################################################################################
@@ -117,7 +118,7 @@ Entry
     $"Edit IceWM Settings")
 
 [ -d $HOME/.jwm -a -e /usr/share/xsessions/jwm.desktop ] && jwm_entry=$(entry \
-    $ICONS/cs-desktop-effects.png \
+    $ICONS/gnome-documents.png \
     "$EDITOR $HOME/.jwm/preferences $HOME/.jwm/keys $HOME/.jwm/tray $HOME/.jwm/startup $HOME/.jwmrc $HOME/.jwm/menu &" \
     $"Edit jwm Settings")
 
