@@ -1,3 +1,10 @@
+control-centre-antix (0.6.5) unstable; urgency=medium
+
+  * jwm settings button to match icons with icewm and fluxbox
+  * updated translations
+
+ -- anticapitalista <antix@operamail.com>  Sat, 18 Nov 2017 17:02:03 +0200
+
 control-centre-antix (0.6.4) unstable; urgency=medium
 
   *  installer button should not appear on installed systems
