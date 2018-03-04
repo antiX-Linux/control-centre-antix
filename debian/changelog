@@ -1,3 +1,10 @@
+control-centre-antix (0.6.6) unstable; urgency=medium
+
+  * Amharic language added
+  * Added Repo-manager to Maintenance
+
+ -- anticapitalista <antix@operamail.com>  Mon, 26 Feb 2018 20:46:23 +0200
+
 control-centre-antix (0.6.5) unstable; urgency=medium
 
   * jwm settings button to match icons with icewm and fluxbox

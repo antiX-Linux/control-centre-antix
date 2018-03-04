@@ -8,8 +8,8 @@ Homepage: https://github.com/antiX-Linux/control-centre-antix
 
 Package: control-centre-antix
 Architecture: all
-Depends: gtkdialog, yad, geany, leafpad, lxappearance, sysv-rc-conf, ceni, wallpaper-antix, arandr, gparted, partimage, grsync, live-usb-maker-gui, inxi-gui-antix, ds-mouse-antix, alsa-utils, set-screen-blank-antix, codecs-antix, lxterminal
-Recommends: lxterminal, artwork17-antix, arc-theme, grubcc-antix, packageinstaller, packageinstaller-pkglist, fskbsetting, rxvt-unicode, droopy-antix, connectshares-antix, automount-antix, mountbox-antix, lxkeymap  
+Depends: gtkdialog, yad, geany, leafpad, lxappearance, sysv-rc-conf, ceni, wallpaper-antix, arandr, gparted, partimage, grsync, live-usb-maker-gui-antix, inxi-gui-antix, ds-mouse-antix, alsa-utils, set-screen-blank-antix, codecs-antix, lxterminal, repo-manager
+Recommends: lxterminal, artwork17-antix, arc-theme, grubcc-antix, packageinstaller, packageinstaller-pkglist, fskbsetting, rxvt-unicode, droopy-antix, connectshares-antix, automount-antix, mountbox-antix, lxkeymap   
 Conflicts: mouse-cc-antix, antix-cc-full-antix, antix-cc-base-antix 
 Replaces: mouse-cc-antix, antix-cc-full-antix, antix-cc-base-antix  
 Description: Control centre for antiX full and base versions.

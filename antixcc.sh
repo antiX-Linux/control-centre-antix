@@ -377,12 +377,12 @@ test -x $mountbox_prog && mountbox_entry=$(entry \
     "mountbox &" \
     $"Mount Connected Devices")
 
-liveusb_prog_g=/usr/local/bin/live-usb-maker-gui
+liveusb_prog_g=/usr/bin/live-usb-maker-gui-antix
 liveusb_prog=/usr/local/bin/live-usb-maker
 if test -x $liveusb_prog_g; then
 liveusb_entry=$(entry \
     $ICONS/usb-creator.png \
-    "gksu live-usb-maker-gui &" \
+    "gksu live-usb-maker-gui-antix &" \
     $"Create Live-USB (live-usb-maker-gui)")
 
 elif test -x $liveusb_prog; then
@@ -499,6 +499,12 @@ test -x $broadcom_prog && broadcom_entry=$(entry \
     "su-to-root -X -c broadcom-manager &" \
     $"Network Troubleshooting")
 
+repomanager_prog=/usr/sbin/broadcom-manager
+test -x $repomanager_prog && repomanager_entry=$(entry \
+    $ICONS/repo-manager.png \
+    "su-to-root -X -c repo-manager &" \
+    $"Manage APT Repositories")
+
 which backlight-brightness &>/dev/null && [ -n "$(ls /sys/class/backlight 2>/dev/null)" ] \
     && backlight_entry=$(entry \
     "/usr/share/icons/Adwaita/48x48/devices/video-display-symbolic.symbolic.png" \
@@ -574,7 +580,7 @@ $(vbox_frame_hbox \
 "$(vbox "$ndiswrapper_entry")" )
 
 $(vbox_frame_hbox \
-"$(vbox "$snapshot_entry" "$backup_entry" "$broadcom_entry")" \
+"$(vbox "$snapshot_entry" "$backup_entry" "$broadcom_entry" "$repomanager_entry")" \
 "$(vbox "$bootrepair_entry" "$menumanager_entry" "$usermanager_entry")" )
 
 </notebook>
