@@ -1,3 +1,9 @@
+control-centre-antix (0.6.7) unstable; urgency=medium
+
+  * Updated ca, de, es, fr, nl, pt
+
+ -- anticapitalista <antix@operamail.com>  Fri, 16 Mar 2018 17:44:48 +0200
+
 control-centre-antix (0.6.6) unstable; urgency=medium
 
   * Amharic language added
