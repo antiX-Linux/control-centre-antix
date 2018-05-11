@@ -338,7 +338,7 @@ which ${EDITOR%% *} &>/dev/null && confroot_entry=$(entry \
 arandr_prog=/usr/bin/arandr
 test -x $arandr_prog && arandr_entry=$(entry \
     $ICONS/video-display.png \
-    "gksu arandr &" \
+    "arandr &" \
     $"Set Screen Resolution")
 
 gksu_prog=/usr/bin/gksu-properties
